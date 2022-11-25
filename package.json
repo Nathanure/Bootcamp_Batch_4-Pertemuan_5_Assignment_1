@@ -1,0 +1,17 @@
+{
+  "name": "package-wgs",
+  "version": "1.0.0",
+  "description": "Learn NPM",
+  "main": "app.js",
+  "scripts": {
+    "start": "node app",
+    "evol": "ls",
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "author": "Nathanca Vijita",
+  "license": "ISC",
+  "dependencies": {
+    "validator": "^13.7.0"
+  },
+  "type": "module"
+}
