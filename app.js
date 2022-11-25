@@ -21,29 +21,29 @@ rl.question('What\'s your name? ', (name) => {
             // Outputs and validation
             // Name validation
             switch (valid.isAlpha(name)) {
-                case true:
-                    console.log(`Your name is ${(name)}`);
+                case false:
+                    console.log('Your name contains NOT a Characters')
                     break;
                 default:
-                    console.log('Your name contains NOT a Characters')
+                    console.log(`Your name is ${(name)}`);
                     break;
             }
             // Email validation
             switch (valid.isEmail(email)) {
-                case true:
-                    console.log(`Your email is ${(email)}`);
+                case false:
+                    console.log('Your email format is wrong')
                     break;
                 default:
-                    console.log('Your email format is wrong')
+                    console.log(`Your email is ${(email)}`);
                     break;
             }
             // Phone Number validation
             switch (valid.isMobilePhone(telp)) {
-                case true:
-                    console.log(`Your number is ${(telp)}`);
+                case false:
+                    console.log('Your number format is wrong')
                     break;
                 default:
-                    console.log('Your number format is wrong')
+                    console.log(`Your number is ${(telp)}`);
                     break;
             }
             // Close the readLine module
