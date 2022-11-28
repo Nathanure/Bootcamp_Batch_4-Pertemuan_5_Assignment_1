@@ -22,7 +22,7 @@ rl.question('What\'s your name? ', (name) => {
             // Name validation
             switch (valid.isAlpha(name)) {
                 case false:
-                    console.log('Your name contains NOT a Characters')
+                    console.log('Your name contains NOT characters')
                     break;
                 default:
                     console.log(`Your name is ${(name)}`);
